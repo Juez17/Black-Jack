@@ -1,0 +1,214 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+html {
+    background-image: url("../images/poker.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat repeat;
+}
+body {
+    color: white;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+    top: 400px;
+}
+
+.hit-button {
+    display: initial;
+}
+
+.button-section {
+    display: flex;
+    
+}
+.start-game-button, .hit-button, .stand-button, .deal-button {
+    background-color:#f2e9e9;
+    color: black;
+    /* width: 200px;
+    height: 100px; */
+    -webkit-box-shadow: 5px 5px 5px black;
+            box-shadow: 5px 5px 5px black;
+    border-radius: 25px;
+    padding: 2rem;
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* margin-top: 5rem; */
+}
+.hit-button {
+    /* left: 20%; */
+}
+
+.stand-button {
+    /* left: 40%; */
+}
+.deal-button {
+    /* left: 60%; */
+}
+
+
+.welcome-disappear {
+    -webkit-animation-name: 'example';
+            animation-name: 'example';
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: 0px;
+    -webkit-animation: 'deal1' 1s ease-out;
+            animation: 'deal1' 1s ease-out;
+}
+.container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+.croupier-card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+.croupier-card-hidden {
+
+}
+.player-field, .croupier-field {
+    width: 50%;
+    margin-bottom: 10rem;
+}
+
+.row1 {
+    top: 0px;
+    -webkit-animation: 'deal1' 1s ease-out;
+            animation: 'deal1' 1s ease-out;
+}
+
+div {
+    /* display: inline-block; */
+    /* width: 920px; */
+}
+.row2 {
+    /* top: 100px; */
+    /* right: 600px; */
+    -webkit-animation: 'deal1' 1s ease-out;
+            animation: 'deal1' 1s ease-out;
+}
+
+.row3 {
+    top: 200px;
+    /* right: 600px; */
+    -webkit-animation: 'deal1' 1s ease-out;
+            animation: 'deal1' 1s ease-out;
+}
+
+/* .deal-card {
+    transition: transform 2s ease-out 10s;
+    transform: translateY(500px) translateX(-300px);
+} */
+
+@-webkit-keyframes deal1 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes deal1 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes deal2 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 100px;
+        left: 0px;
+    }
+}
+
+@keyframes deal2 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 100px;
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes deal3 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 200px;
+        right: -1200px;
+    }
+}
+
+@keyframes deal3 {
+    0% {
+        top: -1800px;
+        left: 1000px;
+    }
+    100% {
+        top: 200px;
+        right: -1200px;
+    }
+}
+
+
+@-webkit-keyframes example {
+    0%   {opacity: 1}
+    100% {
+        opacity: 0;
+        display: none;
+    }
+  }
+
+
+@keyframes example {
+    0%   {opacity: 1}
+    100% {
+        opacity: 0;
+        display: none;
+    }
+  }
+
+.hidden {
+    display: none;
+}
